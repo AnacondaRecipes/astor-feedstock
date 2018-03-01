@@ -16,7 +16,7 @@ build:
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
 
@@ -30,6 +30,7 @@ test:
 about:
   home: https://github.com/berkerpeksag/astor
   license: BSD-3-Clause
+  license_family: BSD
   summary: 'Read, rewrite, and write Python ASTs nicely'
   license_file: LICENSE
   description: |
