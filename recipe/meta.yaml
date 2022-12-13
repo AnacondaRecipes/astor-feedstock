@@ -26,6 +26,8 @@ requirements:
 test:
   imports:
     - astor
+  requires:
+    - pip
   commands:
     - pip check
 
