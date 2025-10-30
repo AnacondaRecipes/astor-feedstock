@@ -8,11 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   script: pip install . --no-deps --no-build-isolation --ignore-installed --no-cache-dir -vv
 
 requirements:
@@ -36,7 +36,7 @@ about:
   home: https://github.com/berkerpeksag/astor
   license: BSD-3-Clause
   license_family: BSD
-  summary: 'Read, rewrite, and write Python ASTs nicely'
+  summary: Read, rewrite, and write Python ASTs nicely
   license_file: LICENSE
   description: |
     astor is designed to allow easy manipulation of Python source via the AST.
